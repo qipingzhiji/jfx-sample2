@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="535.0" prefWidth="615.0" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="483.0" prefWidth="513.0" GridPane.rowIndex="1">
+         <children>
+            <TextArea fx:id="plaintextMessage" layoutX="175.0" layoutY="34.0" prefHeight="107.0" prefWidth="286.0" wrapText="true" />
+            <Label layoutX="74.0" layoutY="72.0" text="输入报文" />
+            <Button layoutX="65.0" layoutY="159.0" mnemonicParsing="false" onMouseClicked="#base64Decrypt" text="base64解密" />
+            <TextArea fx:id="decryptMessage" editable="false" layoutX="175.0" layoutY="159.0" prefHeight="124.0" prefWidth="286.0" wrapText="true" />
+            <Button layoutX="65.0" layoutY="295.0" mnemonicParsing="false" onMouseClicked="#cryptBase54" text="base64加密" />
+            <TextArea fx:id="cryptBase64Msg" editable="false" layoutX="175.0" layoutY="295.0" prefHeight="160.0" prefWidth="286.0" wrapText="true" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
