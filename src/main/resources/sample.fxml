@@ -18,12 +18,16 @@
    <children>
       <Pane prefHeight="483.0" prefWidth="513.0" GridPane.rowIndex="1">
          <children>
-            <TextArea fx:id="plaintextMessage" layoutX="175.0" layoutY="34.0" prefHeight="107.0" prefWidth="286.0" wrapText="true" />
-            <Label layoutX="74.0" layoutY="72.0" text="输入报文" />
-            <Button layoutX="65.0" layoutY="159.0" mnemonicParsing="false" onMouseClicked="#base64Decrypt" text="base64解密" />
-            <TextArea fx:id="decryptMessage" editable="false" layoutX="175.0" layoutY="159.0" prefHeight="124.0" prefWidth="286.0" wrapText="true" />
-            <Button layoutX="65.0" layoutY="295.0" mnemonicParsing="false" onMouseClicked="#cryptBase54" text="base64加密" />
-            <TextArea fx:id="cryptBase64Msg" editable="false" layoutX="175.0" layoutY="295.0" prefHeight="160.0" prefWidth="286.0" wrapText="true" />
+            <TextArea fx:id="plaintextMessage" layoutX="168.0" layoutY="22.0" prefHeight="107.0" prefWidth="286.0" wrapText="true" />
+            <Label layoutX="67.0" layoutY="60.0" text="输入报文" />
+            <Button layoutX="67.0" layoutY="147.0" mnemonicParsing="false" onMouseClicked="#base64Decrypt" text="base64解码" />
+            <TextArea fx:id="decryptMessage" editable="false" layoutX="168.0" layoutY="147.0" prefHeight="124.0" prefWidth="286.0" wrapText="true" />
+            <Button layoutX="67.0" layoutY="186.0" mnemonicParsing="false" onMouseClicked="#cryptBase54" text="base64编码" />
+            <TextArea fx:id="publicKey" editable="false" layoutX="168.0" layoutY="283.0" prefHeight="76.0" prefWidth="286.0" wrapText="true" />
+            <TextArea fx:id="privateKey" editable="false" layoutX="168.0" layoutY="372.0" prefHeight="85.0" prefWidth="286.0" wrapText="true" />
+            <Button layoutX="61.0" layoutY="230.0" mnemonicParsing="false" onMouseClicked="#createRsaKeyPair" text="生成rsa密钥对" />
+            <Label layoutX="91.0" layoutY="283.0" text="公钥" />
+            <Label layoutX="91.0" layoutY="372.0" text="私钥" />
          </children>
       </Pane>
    </children>
